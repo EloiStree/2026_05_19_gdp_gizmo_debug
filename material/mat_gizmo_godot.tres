@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://d0nob347jj3j5"]
+
+[ext_resource type="Texture2D" uid="uid://cvwt462oywe3i" path="res://_/addons/3d/gizmo/gizmo_3d_uv_color.png" id="1_ggbew"]
+
+[resource]
+cull_mode = 2
+albedo_texture = ExtResource("1_ggbew")

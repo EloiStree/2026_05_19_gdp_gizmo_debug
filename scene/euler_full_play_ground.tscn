@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bhdcqre7cm7uo"]
+
+[ext_resource type="Script" uid="uid://b7wyi77syg8uo" path="res://_/addons/script/gizmo_euler_play_ground_three_node.gd" id="1_fif44"]
+[ext_resource type="PackedScene" uid="uid://cu770idxd8h7w" path="res://_/addons/scene/arrow_forward_unity_z.tscn" id="2_bvp0e"]
+[ext_resource type="PackedScene" uid="uid://3a8gi13ol65e" path="res://_/addons/scene/euler_full_x.tscn" id="3_cglmf"]
+[ext_resource type="PackedScene" uid="uid://d3jjiym08fu74" path="res://_/addons/scene/euler_full_y.tscn" id="4_8ubcq"]
+[ext_resource type="PackedScene" uid="uid://hsvd3tytsolt" path="res://_/addons/scene/euler_full_z.tscn" id="5_1qwqw"]
+[ext_resource type="PackedScene" uid="uid://cqkx8tyr0kp2j" path="res://_/addons/scene/direction.tscn" id="6_dhcex"]
+
+[node name="EulerFullPlayGround" type="Node3D" unique_id=1116817382 node_paths=PackedStringArray("node_center_check", "node_x", "node_y", "node_z")]
+script = ExtResource("1_fif44")
+node_center_check = NodePath("ArrowForwardUnityZ")
+node_x = NodePath("PivotX")
+node_y = NodePath("PivotX/PivotY")
+node_z = NodePath("PivotX/PivotY/PivotZ")
+
+[node name="ArrowForwardUnityZ" parent="." unique_id=453985614 instance=ExtResource("2_bvp0e")]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
+
+[node name="PivotX" type="Node3D" parent="." unique_id=1130476711]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
+
+[node name="EulerFullX" parent="PivotX" unique_id=1240183023 instance=ExtResource("3_cglmf")]
+transform = Transform3D(-2.198683e-07, 5.03, 0, -5.03, -2.198683e-07, 0, 0, 0, 5.03, 0, 0, 0)
+
+[node name="PivotY" type="Node3D" parent="PivotX" unique_id=1811007888]
+
+[node name="EulerFullY" parent="PivotX/PivotY" unique_id=1331990348 instance=ExtResource("4_8ubcq")]
+transform = Transform3D(2.98, 0, 0, 0, 2.98, 0, 0, 0, 2.98, 0, 0, 0)
+color = Color(0.25363788, 0.4982142, 0.24824265, 1)
+
+[node name="PivotZ" type="Node3D" parent="PivotX/PivotY" unique_id=283888417]
+transform = Transform3D(0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="EulerFullZ" parent="PivotX/PivotY/PivotZ" unique_id=688546074 instance=ExtResource("5_1qwqw")]
+transform = Transform3D(1.5300001, 0, 0, 0, -6.687843e-08, -1.5300001, 0, 1.5300001, -6.687843e-08, 0, 0, 0)
+
+[node name="EndPoint" type="Node3D" parent="PivotX/PivotY/PivotZ" unique_id=1335470913]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.6879249)
+
+[node name="Direction" parent="PivotX/PivotY/PivotZ/EndPoint" unique_id=1306167686 instance=ExtResource("6_dhcex")]
+transform = Transform3D(-1, 0, 8.742278e-08, -8.742278e-08, -4.371139e-08, -1, 3.821371e-15, -1, 4.371139e-08, 0, 0, 0)

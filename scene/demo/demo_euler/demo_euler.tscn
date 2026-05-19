@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dp1h3d2xriq55"]
+
+[ext_resource type="PackedScene" uid="uid://bhdcqre7cm7uo" path="res://_/addons/scene/euler_full_play_ground.tscn" id="1_mnqmt"]
+[ext_resource type="Script" uid="uid://b5qvd5dbkfj2m" path="res://_/addons/script/gizmo_test_euler_play_ground_from_point.gd" id="2_quuce"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_quuce"]
+
+[node name="Node3D" type="Node3D" unique_id=1476298848]
+
+[node name="EulerFullPlayGround" parent="." unique_id=1116817382 instance=ExtResource("1_mnqmt")]
+angle_x = -10.585556095506345
+angle_y = 58.30320509490252
+
+[node name="TestPoint" type="Node3D" parent="." unique_id=857845173 node_paths=PackedStringArray("euler_gizmo", "point_to_track")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.415292, -0.98320293, -3.273601)
+script = ExtResource("2_quuce")
+use_test = true
+euler_gizmo = NodePath("../EulerFullPlayGround")
+point_to_track = NodePath(".")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="TestPoint" unique_id=1250571453]
+mesh = SubResource("SphereMesh_quuce")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=2143868160]
+transform = Transform3D(0.63860667, -0.23788828, 0.7318406, 0, 0.95101875, 0.30913317, -0.7695334, -0.1974145, 0.6073269, 5.1728525, 1.8885121, 3.2652366)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Camera3D" unique_id=1962010115]

@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://oguxpie1kjwf"]
+
+[ext_resource type="Texture2D" uid="uid://cvwt462oywe3i" path="res://_/addons/3d/gizmo/gizmo_3d_uv_color.png" id="1_hymw0"]
+
+[resource]
+albedo_texture = ExtResource("1_hymw0")

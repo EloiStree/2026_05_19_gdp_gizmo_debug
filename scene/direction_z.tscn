@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bb8rg7ywfls24"]
+
+[ext_resource type="ArrayMesh" uid="uid://cidka6fx1chah" path="res://_/addons/3d/direction/direction_gizmo.obj" id="1_y61q8"]
+[ext_resource type="Script" uid="uid://bf1t8hcit5wjm" path="res://_/addons/script/gizmo_change_color_mesh_instance_tool.gd" id="2_53run"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3nuck"]
+albedo_color = Color(0.4611975, 0.59850746, 1, 1)
+
+[node name="DirectionZ" type="MeshInstance3D" unique_id=1372934796 node_paths=PackedStringArray("target_mesh")]
+mesh = ExtResource("1_y61q8")
+surface_material_override/0 = SubResource("StandardMaterial3D_3nuck")
+script = ExtResource("2_53run")
+color = Color(0.4611975, 0.59850746, 1, 1)
+target_mesh = NodePath(".")

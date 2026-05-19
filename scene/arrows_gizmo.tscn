@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://beiql8446yb2l"]
+
+[ext_resource type="PackedScene" uid="uid://mxus8566dyc5" path="res://_/addons/scene/direction_x.tscn" id="1_7vop7"]
+[ext_resource type="PackedScene" uid="uid://oelcywussjx7" path="res://_/addons/scene/direction_y.tscn" id="2_exwm1"]
+[ext_resource type="PackedScene" uid="uid://bb8rg7ywfls24" path="res://_/addons/scene/direction_z.tscn" id="3_m5cov"]
+
+[node name="ArrowsGizmo" type="Node3D" unique_id=27907345]
+
+[node name="Size" type="Node3D" parent="." unique_id=2095723081]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="DirectionX" parent="Size" unique_id=335945419 instance=ExtResource("1_7vop7")]
+transform = Transform3D(-4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0, 1, 0.49587417, 0, 0)
+
+[node name="DirectionY" parent="Size" unique_id=1978279789 instance=ExtResource("2_exwm1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.513405, 0)
+
+[node name="DirectionUnityZ" parent="Size" unique_id=1372934796 instance=ExtResource("3_m5cov")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, -0.50589174)
+
+[node name="DirectionGodotZ" parent="Size" unique_id=1415205659 instance=ExtResource("3_m5cov")]
+transform = Transform3D(0.355, 0, 0, 0, -1.5517543e-08, -0.355, 0, 0.355, -1.5517543e-08, 0, 0, 0.18800244)

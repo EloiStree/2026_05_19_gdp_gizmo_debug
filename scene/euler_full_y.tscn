@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://d3jjiym08fu74"]
+
+[ext_resource type="Script" uid="uid://dxtxr36ife08" path="res://_/addons/script/gizmo_change_color_meshes_instance_tool.gd" id="1_ij6xc"]
+[ext_resource type="ArrayMesh" uid="uid://cidka6fx1chah" path="res://_/addons/3d/direction/direction_gizmo.obj" id="2_rttg2"]
+[ext_resource type="ArrayMesh" uid="uid://bgsm277m2pvkx" path="res://_/addons/3d/euler/direction_gizmo.obj" id="3_u55ga"]
+[ext_resource type="ArrayMesh" uid="uid://drsi5eeplmra1" path="res://_/addons/3d/euler/direction_gizmo_180.obj" id="4_7lm56"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ij6xc"]
+albedo_color = Color(0.33241877, 0.48946506, 0, 1)
+
+[node name="EulerFullY" type="Node3D" unique_id=1331990348 node_paths=PackedStringArray("target_meshes")]
+script = ExtResource("1_ij6xc")
+color = Color(0.33241877, 0.48946506, 0, 1)
+target_meshes = [NodePath("DirectionY"), NodePath("EulerCircleArrowY"), NodePath("EulerCircle180Y")]
+
+[node name="DirectionY" type="MeshInstance3D" parent="." unique_id=373654369]
+transform = Transform3D(0.3, 0, 0, 0, -1.3113417e-08, 0.3, 0, -0.3, -1.3113417e-08, 0, 0, -0.41186002)
+mesh = ExtResource("2_rttg2")
+surface_material_override/0 = SubResource("StandardMaterial3D_ij6xc")
+
+[node name="EulerCircleArrowY" type="MeshInstance3D" parent="." unique_id=1903977168]
+mesh = ExtResource("3_u55ga")
+surface_material_override/0 = SubResource("StandardMaterial3D_ij6xc")
+
+[node name="EulerCircle180Y" type="MeshInstance3D" parent="." unique_id=1658101497]
+transform = Transform3D(1.245, 0, 0, 0, 1.245, 0, 0, 0, 1.245, 0, -0.00084349513, 0)
+mesh = ExtResource("4_7lm56")
+surface_material_override/0 = SubResource("StandardMaterial3D_ij6xc")

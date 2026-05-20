@@ -2,19 +2,20 @@
 
 [ext_resource type="PackedScene" uid="uid://bhdcqre7cm7uo" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/to_learn/euler_full_play_ground.tscn" id="1_dwnmq"]
 [ext_resource type="Script" uid="uid://b5qvd5dbkfj2m" path="res://addons/2026_05_19_gdp_gizmo_debug/script/gizmo_test_euler_play_ground_from_point.gd" id="2_rfp7u"]
+[ext_resource type="PackedScene" uid="uid://beiql8446yb2l" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/arrows_gizmo.tscn" id="3_rfp7u"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_quuce"]
 
 [node name="DemoEulerPlayGround" type="Node3D" unique_id=1476298848]
 
 [node name="EulerFullPlayGround" parent="." unique_id=1116817382 instance=ExtResource("1_dwnmq")]
-angle_x = 7.189474195828347
-angle_y = 76.00870149916555
+angle_x = -16.410000000000025
+angle_y = -178.54
+angle_z = -358.0
 
 [node name="TestPoint" type="Node3D" parent="." unique_id=857845173 node_paths=PackedStringArray("euler_gizmo", "point_to_track")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.152773, 0.298213, -0.7691865)
 script = ExtResource("2_rfp7u")
-use_test = true
 euler_gizmo = NodePath("../EulerFullPlayGround")
 point_to_track = NodePath(".")
 
@@ -25,3 +26,7 @@ mesh = SubResource("SphereMesh_quuce")
 transform = Transform3D(0.63860667, -0.23788828, 0.7318406, 0, 0.95101875, 0.30913317, -0.7695334, -0.1974145, 0.6073269, 5.1728525, 1.8885121, 3.2652366)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="Camera3D" unique_id=1962010115]
+
+[node name="ArrowsGizmo" parent="." unique_id=27907345 instance=ExtResource("3_rfp7u")]
+transform = Transform3D(0.9969173, -0.018315913, -0.07629127, 0, 0.9723699, -0.23344538, 0.0784591, 0.23272574, 0.9693724, 0, 0, 0)
+visible = false

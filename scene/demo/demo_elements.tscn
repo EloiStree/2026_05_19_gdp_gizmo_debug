@@ -47,6 +47,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.064078, 0, -0.89685035)
 
 [node name="GodotGizmo" parent="." unique_id=1699338614 instance=ExtResource("11_t3xxa")]
 transform = Transform3D(5.85, 0, 0, 0, 5.85, -1.6504604e-06, 0, 1.6504604e-06, 5.85, 0.7618175, 0, 1.7603303)
+surface_material_override/0 = null
 
 [node name="UnityGizmo" parent="." unique_id=653587115 instance=ExtResource("12_7y6h1")]
 transform = Transform3D(7.99, 0, 0, 0, 7.99, -2.2542185e-06, 0, 2.2542185e-06, 7.99, 0.6181642, 0, 1.2815636)

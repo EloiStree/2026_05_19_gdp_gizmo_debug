@@ -22,8 +22,6 @@ extends Node3D
 @export var node_z:Node3D
 
 
-
-
 func _process(_delta):
 	refresh_state()
 
@@ -37,7 +35,18 @@ func refresh_state():
 		node_z.rotation_degrees.z = angle_z
 		
 	if node_center_check:
-		node_center_check.rotation= Vector3(deg_to_rad(angle_x), deg_to_rad(angle_y), deg_to_rad(angle_z))
+		#node_center_check.rotation_degrees = Vector3(
+			#angle_x,
+			#angle_y,
+			#angle_z
+		#)
+		node_center_check.quaternion = Quaternion.from_euler(
+			Vector3(
+				deg_to_rad(angle_x),
+				deg_to_rad(angle_y),
+				deg_to_rad(angle_z)
+			),
+		)
 
 
 
@@ -47,7 +56,7 @@ func set_euler_xyz(x:float, y:float, z:float):
 	angle_y = y
 	angle_z = z
 	refresh_state()
-
+	
 
 func set_euler_vector3(vec:Vector3):
 	angle_x = vec.x
@@ -67,5 +76,5 @@ func set_euler_from_quaternion(quat:Quaternion):
 func set_euler_from_direction_on_forward_unity(direction:Vector3):
 	var foward_direction_start := Vector3(0, 0, -1)
 	var user_direction:= direction.normalized()
-	var rotation_quat: Quaternion = Quaternion.from_euler(foward_direction_start.angle_to(user_direction) * foward_direction_start.cross(user_direction).normalized())	
+	var rotation_quat: Quaternion = Quaternion.from_euler(foward_direction_start.angle_to(user_direction) * foward_direction_start.cross(user_direction).normalized())
 	set_euler_from_quaternion(rotation_quat)

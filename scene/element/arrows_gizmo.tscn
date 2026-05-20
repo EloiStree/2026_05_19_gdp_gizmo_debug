@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://beiql8446yb2l"]
 
-[ext_resource type="PackedScene" uid="uid://mxus8566dyc5" path="res://_/addons/scene/direction_x.tscn" id="1_7vop7"]
-[ext_resource type="PackedScene" uid="uid://oelcywussjx7" path="res://_/addons/scene/direction_y.tscn" id="2_exwm1"]
-[ext_resource type="PackedScene" uid="uid://bb8rg7ywfls24" path="res://_/addons/scene/direction_z.tscn" id="3_m5cov"]
+[ext_resource type="PackedScene" uid="uid://mxus8566dyc5" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/direction_x.tscn" id="1_7vop7"]
+[ext_resource type="PackedScene" uid="uid://oelcywussjx7" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/direction_y.tscn" id="2_exwm1"]
+[ext_resource type="PackedScene" uid="uid://bb8rg7ywfls24" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/direction_z.tscn" id="3_m5cov"]
 
 [node name="ArrowsGizmo" type="Node3D" unique_id=27907345]
 

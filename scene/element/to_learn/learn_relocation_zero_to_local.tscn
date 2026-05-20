@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://cp0vukbk4u4h8"]
+
+[ext_resource type="PackedScene" uid="uid://bqw4t7i5jhqmb" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/unity_gizmo.tscn" id="1_fguyx"]
+[ext_resource type="Script" uid="uid://b23wrrjnejmed" path="res://addons/2026_05_19_gdp_gizmo_debug/script/learn_relocalisation_from_zero.gd" id="2_alcn7"]
+[ext_resource type="PackedScene" uid="uid://beiql8446yb2l" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/arrows_gizmo.tscn" id="3_alcn7"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_qqfom"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_21rn7"]
+albedo_color = Color(1, 0.3481247, 0.6023499, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_alcn7"]
+albedo_color = Color(1, 1, 0, 1)
+
+[node name="LearnRelocationZeroToLocal" type="Node3D" unique_id=806478572]
+transform = Transform3D(7.989999, 0, 0, 0, 7.9900002, 0, 0, 0, 7.9899993, 0, 0, 0)
+
+[node name="Code" type="Node" parent="." unique_id=751684932 node_paths=PackedStringArray("le_point_observer_at_zero", "le_plan", "le_point_observer_relocalised")]
+script = ExtResource("2_alcn7")
+le_point_observer_at_zero = NodePath("../Point")
+le_plan = NodePath("../UnityGizmoPoint")
+le_point_observer_relocalised = NodePath("../UnityGizmoPoint/Point")
+
+[node name="UnityGizmoPoint" parent="." unique_id=653587115 instance=ExtResource("1_fguyx")]
+transform = Transform3D(0.37664467, -2.9802322e-08, -0.9263578, 1.1224884e-08, 0.99999994, -2.7607618e-08, 0.9263578, 1.7763568e-15, 0.37664467, 0.16679317, 0.26234874, 0.11230571)
+surface_material_override/0 = null
+
+[node name="Point" type="MeshInstance3D" parent="UnityGizmoPoint" unique_id=406097073]
+transform = Transform3D(0.02500003, -4.5252513e-09, -3.259629e-08, 1.7695129e-08, 0.02499985, 7.2641384e-08, -2.7939677e-09, -2.7788952e-08, 0.025000341, -0.028778955, -0.00088724494, -0.0047389567)
+mesh = SubResource("SphereMesh_qqfom")
+surface_material_override/0 = SubResource("StandardMaterial3D_21rn7")
+
+[node name="Point" type="MeshInstance3D" parent="." unique_id=1903891592]
+transform = Transform3D(0.025, 0, 0, 0, 0.025, 0, 0, 0, 0.025000004, -0.028778957, -0.00088724523, -0.004738964)
+mesh = SubResource("SphereMesh_qqfom")
+surface_material_override/0 = SubResource("StandardMaterial3D_alcn7")
+
+[node name="ArrowsGizmo" parent="." unique_id=27907345 instance=ExtResource("3_alcn7")]
+transform = Transform3D(0.15, 0, 0, 0, 0.15, 0, 0, 0, 0.15, 0, 0, 0)
+
+[editable path="UnityGizmoPoint"]

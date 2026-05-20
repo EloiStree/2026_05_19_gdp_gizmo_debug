@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://bhdcqre7cm7uo"]
 
-[ext_resource type="Script" uid="uid://b7wyi77syg8uo" path="res://_/addons/script/gizmo_euler_play_ground_three_node.gd" id="1_fif44"]
-[ext_resource type="PackedScene" uid="uid://cu770idxd8h7w" path="res://_/addons/scene/arrow_forward_unity_z.tscn" id="2_bvp0e"]
-[ext_resource type="PackedScene" uid="uid://3a8gi13ol65e" path="res://_/addons/scene/euler_full_x.tscn" id="3_cglmf"]
-[ext_resource type="PackedScene" uid="uid://d3jjiym08fu74" path="res://_/addons/scene/euler_full_y.tscn" id="4_8ubcq"]
-[ext_resource type="PackedScene" uid="uid://hsvd3tytsolt" path="res://_/addons/scene/euler_full_z.tscn" id="5_1qwqw"]
-[ext_resource type="PackedScene" uid="uid://cqkx8tyr0kp2j" path="res://_/addons/scene/direction.tscn" id="6_dhcex"]
+[ext_resource type="Script" uid="uid://b7wyi77syg8uo" path="res://addons/2026_05_19_gdp_gizmo_debug/script/gizmo_euler_play_ground_three_node.gd" id="1_fif44"]
+[ext_resource type="PackedScene" uid="uid://cu770idxd8h7w" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/arrow_forward_unity_z.tscn" id="2_bvp0e"]
+[ext_resource type="PackedScene" uid="uid://3a8gi13ol65e" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/euler_full_x.tscn" id="3_cglmf"]
+[ext_resource type="PackedScene" uid="uid://d3jjiym08fu74" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/euler_full_y.tscn" id="4_8ubcq"]
+[ext_resource type="PackedScene" uid="uid://hsvd3tytsolt" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/euler_full_z.tscn" id="5_1qwqw"]
+[ext_resource type="PackedScene" uid="uid://cqkx8tyr0kp2j" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/direction.tscn" id="6_dhcex"]
 
 [node name="EulerFullPlayGround" type="Node3D" unique_id=1116817382 node_paths=PackedStringArray("node_center_check", "node_x", "node_y", "node_z")]
 script = ExtResource("1_fif44")

@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://2aovg8sgje61"]
+
+[ext_resource type="PackedScene" uid="uid://bqw4t7i5jhqmb" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/unity_gizmo.tscn" id="1_xd8b7"]
+[ext_resource type="Script" uid="uid://cg48m0oqe7itt" path="res://addons/2026_05_19_gdp_gizmo_debug/script/learn_relocalisation_to_zero.gd" id="2_u0ivk"]
+[ext_resource type="PackedScene" uid="uid://beiql8446yb2l" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/arrows_gizmo.tscn" id="3_u0ivk"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_qqfom"]
+
+[node name="LearnRelocationPointToZero" type="Node3D" unique_id=1754599764]
+transform = Transform3D(7.9899993, 0, 0, 0, 7.99, 0, 0, 0, 7.9899993, 0, 0, 0)
+
+[node name="UnityGizmoFrom" parent="." unique_id=653587115 instance=ExtResource("1_xd8b7")]
+transform = Transform3D(0.5465697, -2.9802322e-08, 0.8374136, 1.6289045e-08, 0.99999994, 2.4956874e-08, -0.8374136, -1.7763568e-15, 0.5465697, 0.24239323, 0.09925281, -0.35287338)
+
+[node name="Point" type="MeshInstance3D" parent="UnityGizmoFrom" unique_id=1324590458]
+transform = Transform3D(0.025, 0, 0, 0, 0.025, 0, 0, 0, 0.025, -0.06474359, -0.08027509, -0.14955667)
+mesh = SubResource("SphereMesh_qqfom")
+
+[node name="Code" type="Node" parent="." unique_id=1610433383 node_paths=PackedStringArray("le_point_observer", "le_plan", "le_point_observer_relocalised")]
+script = ExtResource("2_u0ivk")
+le_point_observer = NodePath("../UnityGizmoFrom/Point")
+le_plan = NodePath("../UnityGizmoFrom")
+localized_point_observer = Vector3(0.05, 0, 0)
+le_point_observer_relocalised = NodePath("../Point")
+
+[node name="Point" type="MeshInstance3D" parent="." unique_id=781589782]
+transform = Transform3D(0.025000002, 0, 0, 0, 0.024999999, 0, 0, 0, 0.025000002, -0.06474359, 0.0791191, -0.14955667)
+mesh = SubResource("SphereMesh_qqfom")
+
+[node name="ArrowsGizmo" parent="." unique_id=27907345 instance=ExtResource("3_u0ivk")]
+transform = Transform3D(0.145, 0, 0, 0, 0.145, 0, 0, 0, 0.145, 0, 0, 0)

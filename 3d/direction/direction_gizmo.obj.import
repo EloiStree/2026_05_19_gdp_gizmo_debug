@@ -4,14 +4,14 @@ importer="wavefront_obj"
 importer_version=1
 type="Mesh"
 uid="uid://cidka6fx1chah"
-path="res://.godot/imported/direction_gizmo.obj-cf65d0e2ec3fadacbdbf3e79473ffeec.mesh"
+path="res://.godot/imported/direction_gizmo.obj-0075a19977f2a8c27504c6e1733eac6f.mesh"
 
 [deps]
 
-files=["res://.godot/imported/direction_gizmo.obj-cf65d0e2ec3fadacbdbf3e79473ffeec.mesh"]
+files=["res://.godot/imported/direction_gizmo.obj-0075a19977f2a8c27504c6e1733eac6f.mesh"]
 
-source_file="res://_/addons/3d/direction/direction_gizmo.obj"
-dest_files=["res://.godot/imported/direction_gizmo.obj-cf65d0e2ec3fadacbdbf3e79473ffeec.mesh", "res://.godot/imported/direction_gizmo.obj-cf65d0e2ec3fadacbdbf3e79473ffeec.mesh"]
+source_file="res://addons/2026_05_19_gdp_gizmo_debug/3d/direction/direction_gizmo.obj"
+dest_files=["res://.godot/imported/direction_gizmo.obj-0075a19977f2a8c27504c6e1733eac6f.mesh", "res://.godot/imported/direction_gizmo.obj-0075a19977f2a8c27504c6e1733eac6f.mesh"]
 
 [params]
 

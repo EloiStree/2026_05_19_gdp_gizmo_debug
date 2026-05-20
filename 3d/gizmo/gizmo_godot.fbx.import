@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dov6d13i6mck8"
-path="res://.godot/imported/gizmo_godot.fbx-2cdb6b89465bc930509d6fa28cb4e7cf.scn"
+path="res://.godot/imported/gizmo_godot.fbx-cef45a60e40f3d1792983e76f5f0a501.scn"
 
 [deps]
 
-source_file="res://_/addons/3d/gizmo/gizmo_godot.fbx"
-dest_files=["res://.godot/imported/gizmo_godot.fbx-2cdb6b89465bc930509d6fa28cb4e7cf.scn"]
+source_file="res://addons/2026_05_19_gdp_gizmo_debug/3d/gizmo/gizmo_godot.fbx"
+dest_files=["res://.godot/imported/gizmo_godot.fbx-cef45a60e40f3d1792983e76f5f0a501.scn"]
 
 [params]
 

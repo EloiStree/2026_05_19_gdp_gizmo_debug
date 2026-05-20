@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://cgr70ulfrqj4a"]
+
+[ext_resource type="PackedScene" uid="uid://beiql8446yb2l" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/arrows_gizmo.tscn" id="1_4dkyc"]
+[ext_resource type="PackedScene" uid="uid://cu770idxd8h7w" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/arrow_forward_unity_z.tscn" id="2_spo02"]
+[ext_resource type="PackedScene" uid="uid://cqkx8tyr0kp2j" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/direction.tscn" id="3_win8r"]
+[ext_resource type="PackedScene" uid="uid://mxus8566dyc5" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/direction_x.tscn" id="4_mcypg"]
+[ext_resource type="PackedScene" uid="uid://oelcywussjx7" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/direction_y.tscn" id="5_7tbss"]
+[ext_resource type="PackedScene" uid="uid://bb8rg7ywfls24" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/direction_z.tscn" id="6_yfwt7"]
+[ext_resource type="PackedScene" uid="uid://bhdcqre7cm7uo" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/to_learn/euler_full_play_ground.tscn" id="7_mjglo"]
+[ext_resource type="PackedScene" uid="uid://3a8gi13ol65e" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/euler_full_x.tscn" id="8_kvmu8"]
+[ext_resource type="PackedScene" uid="uid://d3jjiym08fu74" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/euler_full_y.tscn" id="9_meol0"]
+[ext_resource type="PackedScene" uid="uid://hsvd3tytsolt" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/euler_full_z.tscn" id="10_8t7fj"]
+[ext_resource type="PackedScene" uid="uid://dfwk584ofrqjm" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/godot_gizmo.tscn" id="11_t3xxa"]
+[ext_resource type="PackedScene" uid="uid://bqw4t7i5jhqmb" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/unity_gizmo.tscn" id="12_7y6h1"]
+
+[node name="DemoElements" type="Node3D" unique_id=1859812306]
+
+[node name="ArrowsGizmo" parent="." unique_id=27907345 instance=ExtResource("1_4dkyc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.0906163, 2.3841858e-07, -0.07156873)
+
+[node name="ArrowForwardUnityZ" parent="." unique_id=453985614 instance=ExtResource("2_spo02")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.12587702, 0, -0.23041654)
+
+[node name="Direction" parent="." unique_id=1306167686 instance=ExtResource("3_win8r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.0869075, 0, 0.803329)
+
+[node name="DirectionX" parent="." unique_id=335945419 instance=ExtResource("4_mcypg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.53790534, 0, 1.8867899)
+
+[node name="DirectionY" parent="." unique_id=1978279789 instance=ExtResource("5_7tbss")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.12845206, 0, 1.4892838)
+
+[node name="DirectionZ" parent="." unique_id=1372934796 instance=ExtResource("6_yfwt7")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.17216003, -1.1920929e-07, 2.2412941)
+
+[node name="EulerFullPlayGround" parent="." unique_id=1116817382 instance=ExtResource("7_mjglo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.1674595, 0, -0.1665988)
+
+[node name="EulerFullX" parent="." unique_id=1240183023 instance=ExtResource("8_kvmu8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7986483, 1.1920929e-07, -0.49915195)
+
+[node name="EulerFullY" parent="." unique_id=1331990348 instance=ExtResource("9_meol0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.918641, 0, 0.5645616)
+
+[node name="EulerFullZ" parent="." unique_id=688546074 instance=ExtResource("10_8t7fj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.064078, 0, -0.89685035)
+
+[node name="GodotGizmo" parent="." unique_id=1699338614 instance=ExtResource("11_t3xxa")]
+transform = Transform3D(5.85, 0, 0, 0, 5.85, -1.6504604e-06, 0, 1.6504604e-06, 5.85, 0.7618175, 0, 1.7603303)
+
+[node name="UnityGizmo" parent="." unique_id=653587115 instance=ExtResource("12_7y6h1")]
+transform = Transform3D(7.99, 0, 0, 0, 7.99, -2.2542185e-06, 0, 2.2542185e-06, 7.99, 0.6181642, 0, 1.2815636)
+surface_material_override/0 = null

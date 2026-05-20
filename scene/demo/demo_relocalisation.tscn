@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://nslru6xmpjt2"]
+
+[ext_resource type="PackedScene" uid="uid://dfwk584ofrqjm" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/godot_gizmo.tscn" id="11_lnp67"]
+[ext_resource type="PackedScene" uid="uid://2aovg8sgje61" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/to_learn/learn_relocation_point_to_zero.tscn" id="12_nj5qa"]
+[ext_resource type="PackedScene" uid="uid://cp0vukbk4u4h8" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/to_learn/learn_relocation_zero_to_local.tscn" id="13_d3np0"]
+
+[node name="DemoRelocalisation" type="Node3D" unique_id=1859812306]
+
+[node name="GodotGizmo" parent="." unique_id=1699338614 instance=ExtResource("11_lnp67")]
+transform = Transform3D(5.85, 0, 0, 0, 5.85, -1.6504604e-06, 0, 1.6504604e-06, 5.85, -56.289772, 0, 1.7603303)
+
+[node name="LearnRelocationPointToZero" parent="." unique_id=1754599764 instance=ExtResource("12_nj5qa")]
+transform = Transform3D(7.989999, 0, 0, 0, 7.9900002, 0, 0, 0, 7.9899993, 0, 0, 0)
+
+[node name="LearnRelocationZeroToLocal" parent="." unique_id=806478572 instance=ExtResource("13_d3np0")]
+transform = Transform3D(7.9899983, 0, 0, 0, 7.9900002, 0, 0, 0, 7.9899993, 0, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1211187601]
+transform = Transform3D(1, 0, 0, 0, 0.9863805, 0.16447952, 0, -0.16447952, 0.9863805, 0.51450443, 1.1325111, 1.6245892)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Camera3D" unique_id=940704494]
+transform = Transform3D(1, 0, 0, 0, 0.9372029, 0.34878471, 0, -0.34878471, 0.9372029, 0, 0, 0)

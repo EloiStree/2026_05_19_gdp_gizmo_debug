@@ -1,17 +1,20 @@
 [gd_scene format=3 uid="uid://dp1h3d2xriq55"]
 
-[ext_resource type="PackedScene" uid="uid://bhdcqre7cm7uo" path="res://_/addons/scene/euler_full_play_ground.tscn" id="1_mnqmt"]
-[ext_resource type="Script" uid="uid://b5qvd5dbkfj2m" path="res://_/addons/script/gizmo_test_euler_play_ground_from_point.gd" id="2_quuce"]
+[ext_resource type="PackedScene" uid="uid://bhdcqre7cm7uo" path="res://addons/2026_05_19_gdp_gizmo_debug/scene/element/to_learn/euler_full_play_ground.tscn" id="1_dwnmq"]
+[ext_resource type="Script" uid="uid://b5qvd5dbkfj2m" path="res://addons/2026_05_19_gdp_gizmo_debug/script/gizmo_test_euler_play_ground_from_point.gd" id="2_rfp7u"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_quuce"]
 
 [node name="DemoEulerPlayGround" type="Node3D" unique_id=1476298848]
 
-[node name="EulerFullPlayGround" parent="." unique_id=1116817382 instance=ExtResource("1_mnqmt")]
+[node name="EulerFullPlayGround" parent="." unique_id=1116817382 instance=ExtResource("1_dwnmq")]
+angle_x = 7.189474195828347
+angle_y = 76.00870149916555
 
 [node name="TestPoint" type="Node3D" parent="." unique_id=857845173 node_paths=PackedStringArray("euler_gizmo", "point_to_track")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.415292, -0.98320293, -3.273601)
-script = ExtResource("2_quuce")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.152773, 0.298213, -0.7691865)
+script = ExtResource("2_rfp7u")
+use_test = true
 euler_gizmo = NodePath("../EulerFullPlayGround")
 point_to_track = NodePath(".")
 
